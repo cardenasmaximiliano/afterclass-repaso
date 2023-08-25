@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***************header*****************/
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px .625rem;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: rgba(255, 255, 0, 0.62);
+}
+.navbar li a:hover{
+    color: yellow;
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+
+
+/***************main*****************/
+.section-principal{
+    background-image: url("https://images.unsplash.com/photo-1543966888-7c1dc482a810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2106&q=80");
+    width: 100%;
+    height: 37.5rem;
+    background-position: center 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-principal div{
+    background-color: rgba(128, 128, 128, 0.395);
+    padding: 2.5rem;
+    text-align: center;
+}
+.section-principal div h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: .625rem;
+}
+
+
+
+
+/***************footer*****************/
+
+
+
+
+/***************media 1024*****************/
+
+
+/***************media 768*****************/
+@media (max-width: 768px){
+
+    /***********index***************/
+    header div{
+        width: 20%;
+    }
+    header nav{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-principal{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 18.75rem;
+    }
+
+
+    /**********contactos*****************/
+    
+
+
+
+
+}
+
+
+
+/***************media 425*****************/
+@media (max-width: 425px){
+    header{
+        flex-direction: column;
+        padding: 1.25rem 0rem;
+    }
+    header div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    header nav{
+        padding: .625rem 0rem;
+        width: 100%;
+    }
+
+}
+
+/***************media 320*****************/
+
+@media (max-width: 320px){
+    .navbar{
+        flex-direction: column;
+    }
+    .section-principal{
+        height: 9.375rem;
+    }
+    .section-principal div{
+        padding: 0;
+        background-color: none;
+    }
+    .section-principal div h1{
+        font-size: 1.875rem;
+    }
+}
